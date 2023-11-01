@@ -2,8 +2,7 @@
 import { useState } from 'react'
 
 // styles
-import './App.css'
-import styles from './App.module.css'
+import "./styles/app.scss"
 
 // componentes
 import Header from './components/Header'
@@ -60,7 +59,7 @@ function App() {
   return <div>
     <Modal children={<TaskForm btnText="Editar tarefa" taskList = {taskList} setTaskList={setTaskList}  task={taskToUpdate} handleUpdate={updateTask}/> }/>
     <Header/>
-    <main className={styles.main}>
+    <main id="main">
       <div>
         <h2>O que você vai fazer?</h2>
         <TaskForm btnText="Criar tarefa" taskList = {taskList} setTaskList={setTaskList} />

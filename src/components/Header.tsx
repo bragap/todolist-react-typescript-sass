@@ -1,7 +1,6 @@
-import styles from './Header.module.css'
-
+import "../styles/components/header.scss"
 const Header = () => {
-  return  <header className={styles.header}>
+  return  <header id="header">
   <h1>Todo List em React + Typescript</h1>
 </header>
 }

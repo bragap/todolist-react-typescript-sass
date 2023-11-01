@@ -2,7 +2,7 @@
 import { ITask } from '../interfaces/Task'
 
 // styles
-import styles from "./TaskList.module.css"
+import "../styles/components/tasklist.scss"
 
 type Props = {
   taskList: ITask[],
@@ -18,12 +18,12 @@ const TaskList = ({taskList, handleDelete, handleEdit}: Props) => {
         taskList.map((task) => {
           if (task.title && task.difficulty) {
             return (
-              <div key={task.id} className={styles.task}>
-                <div className={styles.details}>
+              <div key={task.id} id="task">
+                <div id="details">
                   <h4>{task.title}</h4>
                   <p>Dificuldade: {task.difficulty}</p>
                 </div>
-                <div className={styles.actions}>
+                <div id="actions">
                   <i className="bi bi-pencil" onClick={() => {
                     handleEdit(task)
                   }}></i>

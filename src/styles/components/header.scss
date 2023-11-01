@@ -1,0 +1,9 @@
+@use "../variables.scss";
+
+#header {
+    background-color: variables.$background;
+    color: variables.$font-color;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+}

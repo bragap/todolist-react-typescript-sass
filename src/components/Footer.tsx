@@ -1,7 +1,7 @@
-import styles from './Footer.module.css'
+import "../styles/components/footer.scss"
 
 const Footer = () => {
-    return <footer className={styles.footer}> 
+    return <footer id="footer"> 
   <p>
    <span>
      React + Typescript Todo List

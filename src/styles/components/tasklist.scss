@@ -1,0 +1,41 @@
+@use "../variables.scss";
+
+#task{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+}
+
+#details{
+    text-align: left;
+
+    h4{
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+}
+
+#actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    i{
+        margin-bottom: .3em;
+        font-size: 1.2em;
+        cursor: pointer;
+        background-color: variables.$font-color;
+        color: variables.$background-modal;
+        border-radius: 15px;
+        padding: .4em;
+        transition: .5s;
+        &:hover{
+            background-color: variables.$color-inputs;
+            color: variables.$font-color;
+        }
+    }
+}
