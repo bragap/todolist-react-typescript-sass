@@ -5,9 +5,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
 @mixin btn{
-    
+        background-color: variables.$font-color;
+        border-radius: 5px;
+        transition: .5s;
+        cursor: pointer;
+        &:hover{
+            background-color: variables.$color-gradient;
+            border-color: variables.$color-inputs;
+            color: variables.$font-color;
+        }
 }
 

@@ -1,4 +1,5 @@
 @use "../variables.scss";
+@use "../mixins.scss";
 
 #task{
     display: flex;
@@ -19,10 +20,7 @@
 }
 
 #actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @include mixins.center;
 
     i{
         margin-bottom: .3em;
@@ -34,7 +32,7 @@
         padding: .4em;
         transition: .5s;
         &:hover{
-            background-color: variables.$color-inputs;
+            background-color: variables.$color-gradient;
             color: variables.$font-color;
         }
     }

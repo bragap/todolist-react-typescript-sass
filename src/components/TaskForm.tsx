@@ -68,7 +68,7 @@ const TaskForm = ({ btnText, taskList, setTaskList, task, handleUpdate }: Props)
             <label htmlFor="difficulty"> Dificuldade: </label>
             <input type="text" name="difficulty" placeholder="Dificuldade da tarefa" onChange={handleChange} value={difficulty} />
         </div>
-        <input type="submit" value={btnText} />
+        <input className="btn" type="submit" value={btnText} />
     </form>
 }
 

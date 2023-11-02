@@ -12,6 +12,7 @@
 body{
     background-color: variables.$background;
     color: variables.$font-color;
+    user-select: none;
     &::-webkit-scrollbar-thumb{
        background-color: variables.$font-color;
        border-radius: 10px;
@@ -24,6 +25,7 @@ body{
     &::-webkit-scrollbar{
        width: 10px;
     }
+
     
 }
 
