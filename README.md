@@ -15,4 +15,3 @@
   -  Separei estilos por componente
 
 --- 
-#### Você pode acessar o site ao clicar [aqui](https://todolist-react-typescript-sass.vercel.app/) 
